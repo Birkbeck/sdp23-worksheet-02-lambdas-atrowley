@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class Outline {
 
@@ -66,6 +67,15 @@ public class Outline {
         System.out.println(StringUtils.betterElement(n1,n2,(a,b) -> a > b));
     }
 
+    public static void Q5() {
+        List<String> animals = List.of(getAnimals());
+        List<String> shortWords = StringUtils.allMatches(animals, s -> s.length() < 4);
+        System.out.println(shortWords.toString());
+
+        List<String> wordsWithB = StringUtils.allMatches(animals, s -> s.contains("Billy"));
+        System.out.println(wordsWithB.toString());
+    }
+
     public static void main(String[] args) {
         Q1_1();
         Q1_2();
@@ -74,6 +84,7 @@ public class Outline {
         Q2();
         Q3();
         Q4();
+        Q5();
     }
 
 

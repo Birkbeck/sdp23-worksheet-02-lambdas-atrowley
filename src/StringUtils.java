@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.BinaryOperator;
+import java.util.function.Predicate;
 
 public class StringUtils {
 
@@ -17,4 +20,16 @@ public class StringUtils {
         if(func.check(t1,t2)) return t1;
         return t2;
     }
+
+    public static List<String> allMatches(List<String> lst, Predicate<String> pred){
+
+        List<String> outList = new ArrayList<>();
+
+        for(String str: lst){
+            if(pred.test(str)) outList.add(str);
+        }
+
+        return outList;
+    }
+
 }
