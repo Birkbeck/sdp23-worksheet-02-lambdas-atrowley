@@ -12,4 +12,9 @@ public class StringUtils {
        if(func.check(s1,s2)) return s1;
        return s2;
     }
+
+    public static <T> T betterElement(T t1, T t2, TwoElementPredicate<T> func) {
+        if(func.check(t1,t2)) return t1;
+        return t2;
+    }
 }

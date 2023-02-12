@@ -56,6 +56,16 @@ public class Outline {
 
     }
 
+    public static void Q4() {
+        String s1 = "Adam";
+        String s2 = "Bob";
+        System.out.println(StringUtils.betterElement(s1,s2,(a,b) -> a.length() < b.length() ));
+
+        Integer n1 = 50;
+        Integer n2 = 100;
+        System.out.println(StringUtils.betterElement(n1,n2,(a,b) -> a > b));
+    }
+
     public static void main(String[] args) {
         Q1_1();
         Q1_2();
@@ -63,6 +73,7 @@ public class Outline {
         Q1_4();
         Q2();
         Q3();
+        Q4();
     }
 
 
