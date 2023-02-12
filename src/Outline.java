@@ -49,7 +49,12 @@ public class Outline {
     }
 
 
+    public static void Q3() {
+        String s1 = "Adam";
+        String s2 = "Bob";
+        System.out.println(StringUtils.betterString(s1,s2,(a,b) -> a.length() < b.length() ));
 
+    }
 
     public static void main(String[] args) {
         Q1_1();
@@ -57,6 +62,7 @@ public class Outline {
         Q1_3();
         Q1_4();
         Q2();
+        Q3();
     }
 
 
