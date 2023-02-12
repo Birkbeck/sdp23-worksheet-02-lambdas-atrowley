@@ -42,6 +42,12 @@ public class Outline {
         System.out.println(Arrays.asList(animals));
     }
 
+    public static void Q2() {
+        String[] animals = getAnimals();
+        Arrays.sort(animals, StringUtils::echecker);
+        System.out.println(Arrays.asList(animals));
+    }
+
 
 
 
@@ -50,6 +56,7 @@ public class Outline {
         Q1_2();
         Q1_3();
         Q1_4();
+        Q2();
     }
 
 
